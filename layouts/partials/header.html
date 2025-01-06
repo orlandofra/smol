@@ -5,10 +5,10 @@
 	<div style="float: right;">{{ .Site.Params.subtitle }}</div><br>
 	<p>
 	<nav>
-			<a href="/"><b>Start</b></a>.
+			<a class="menu-item" href="/"><b>domus</b></a>.
 			{{ with .Site.Menus.main }}
 			{{ range . }}
-			<a href="{{ .URL | relURL }}"><b>{{ .Name }}</b></a>.
+			<a class="menu-item" href="{{ .URL | relURL }}"><b>{{ .Name }}</b></a>.
 			{{ end }}
 	</nav>
 	</p>
