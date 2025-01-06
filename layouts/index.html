@@ -1,8 +1,8 @@
 {{ define "main" }}
 	<main>
-		{{ with .Params.portrait }}
+		{{ with .Site.Params.portrait }}
 		<section>
-			<img src="/images/{{ . }}" class="portrait"></img>
+			<img src="/images/{{ . }}" class="portrait" />
 		</section>
 		{{ end }}
 
